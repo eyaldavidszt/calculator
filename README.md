@@ -1,2 +1,2 @@
-just a simple calculator
+just a nice calculator
 (with kb support)
