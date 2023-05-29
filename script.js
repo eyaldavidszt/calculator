@@ -54,6 +54,7 @@ function operate(op, a, b) {
 let display = document.querySelector('.display-box');
 
 let clear = document.querySelector('.clear');
+clear.setAttribute('tabindex', '-1');
 
 let undo = document.querySelector('.undo');
 
