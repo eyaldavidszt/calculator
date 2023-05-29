@@ -63,6 +63,7 @@ let buttons = document.querySelectorAll('button');
 // add class digit to any digit
 for (let button of buttons)
 {
+    button.setAttribute('tabindex', '-1');
     if (parseInt(button.textContent) || button.textContent === "0")
     {
         button.classList.add("digit");
