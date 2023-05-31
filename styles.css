@@ -14,13 +14,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-
-    gap: 24px;
+    gap: 20px;
     padding: 24px;
+
+
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
-    height: 50vh;
     width: 25vw;
     border: 1px solid black;
 }
@@ -39,10 +38,13 @@ body {
     align-items: center;
 }
 
+.clear {
+    font-size: 16px;
+}
 
 
 
-
+/* button styling */
 
 button {
     font: inherit;
@@ -64,9 +66,30 @@ button:active {
     color: white;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+a[href]:active {
+    color: red;
+}
+
+.recolor {
+    background-color:rgb(255, 0, 0);
+    
+}
+.recolor:hover {
+    background-color:rgb(218, 0, 0);
+
+}
+.recolor:active {
+    background-color: black;
+    color: white;
+}
 
 
 
+/* input-box styling */
 
 
 .display-box {
@@ -90,13 +113,10 @@ button:active {
 
 .display-box[disabled] {
     color: rgba(0,0,0,1);
-    
-}
-*::selection {
-background:rgb(255, 255, 255);
 }
 
 
+/* make stuff unselectable */ 
 
 
 h1 {
@@ -112,6 +132,7 @@ button, h1 {
     user-select: none;
 }
 
+/* flexify */
 
 .middle {
     flex-grow: 1;
@@ -133,25 +154,5 @@ button, h1 {
     display: flex;
     justify-content: space-evenly;
     width: 95vw;
-    min-width: 300px;
-}
-a {
-    text-decoration: none;
-    color: black;
-}
-a[href]:active {
-    color: red;
-}
-
-.recolor {
-    background-color:rgb(255, 0, 0);
-    
-}
-.recolor:hover {
-    background-color:rgb(218, 0, 0);
-
-}
-.recolor:active {
-    background-color: black;
-    color: white;
+    min-width: 320px;
 }
