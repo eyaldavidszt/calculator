@@ -243,7 +243,8 @@ sign.addEventListener('click', () => {
         }
 });
 let percent = document.querySelector('.percent');
-percent.addEventListener('click', () => {
+
+function addPercent() {
     let num = 0;
     array = display.value.split(' ');
     if (parseFloat(array[array.length - 1]) || parseFloat(array[array.length - 1]) === 0)
@@ -253,8 +254,9 @@ percent.addEventListener('click', () => {
         array[array.length - 1] = num;
         display.value = array.join(' ');
     }
-})
+}
 
+percent.addEventListener('click', addPercent);
 
 let point = document.querySelector('.point');
 function addPoint() {
@@ -324,6 +326,10 @@ document.addEventListener('keydown', (event) => {
     if (event.key == 'Backspace')
     {
         makeUndo();
+    }
+    if (event.key == '%')
+    {
+        addPercent();
     }
     if (event.code == 'KeyC')
     {
