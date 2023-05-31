@@ -32,6 +32,7 @@ body {
 
 .calculator > * > * {
     flex: 1;
+    min-width: 0;
 }
 
 .grow-2 {
@@ -49,6 +50,7 @@ button {
     background-color: white;
     border-radius: 10px;
     border: 0.5px solid black;
+    color: black;
     
     box-shadow: 0px 5px 15px rgba(145, 92, 182, .4);   
 }
@@ -78,15 +80,12 @@ button:active {
     font-family: inherit;
     font-size: 24px;
     font-weight: 300;
-    color: rgba(0, 0, 0, .8);
-
-    box-shadow: 0px 5px 15px rgba(145, 92, 182, .4);
-
-}
-.display-box:focus {
     outline: 1px solid rgba(0, 0, 0, 0.2);
     color: rgba(0,0,0,1);
     caret-color: transparent;
+
+    box-shadow: 0px 5px 15px rgba(145, 92, 182, .4);
+
 }
 *::selection {
 background:rgb(255, 255, 255);
@@ -133,10 +132,15 @@ button, h1 {
 }
 a {
     text-decoration: none;
+    color: black;
+}
+a[href]:active {
+    color: red;
 }
 
 .recolor {
-    background-color:rgb(231, 222, 255);
+    background-color:rgb(255, 255, 255);
+    
 }
 .recolor:hover {
     background-color:rgb(210, 197, 240);
