@@ -96,6 +96,10 @@ a[href]:active {
     font-size: smaller;
 }
 
+::selection {
+    background-color:rgb(255, 36, 109);
+}
+
 
 
 /* input-box styling */
