@@ -115,7 +115,6 @@ undo.addEventListener('click', makeUndo);
 
 //separate array items by spaces...
 let array = [];
-let operators = ["+", "/", "-", "*"];
 let isOperator = false;
 
 let plus = document.querySelector('.plus');
@@ -243,6 +242,18 @@ sign.addEventListener('click', () => {
             display.value += "-";
         }
 });
+let percent = document.querySelector('.percent');
+percent.addEventListener('click', () => {
+    let num = 0;
+    array = display.value.split(' ');
+    if (parseFloat(array[array.length - 1]) || parseFloat(array[array.length - 1]) === 0)
+    {
+        num = Number(array[array.length - 1]);
+        num = operate("/", num, 100);
+        array[array.length - 1] = num;
+        display.value = array.join(' ');
+    }
+})
 
 
 let point = document.querySelector('.point');
@@ -255,6 +266,7 @@ function addPoint() {
 
 }
 point.addEventListener('click', addPoint);
+
 
 //"Another difference is the result of "    " and "" where in both cases Number will give 0 but parseFloat gives NaN."
 

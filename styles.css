@@ -10,6 +10,7 @@ body {
 
 .calculator {
     min-width: 320px;
+    min-height: 468.5px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -27,12 +28,12 @@ body {
 
 .calculator > * {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 20px;
 }
 
 .calculator > * > * {
-    flex-basis: 70px;
+    flex-basis: 80px;
     height: 40px;
     display: flex;
     justify-content: center;
@@ -40,13 +41,6 @@ body {
 }
 
 
-.row-1 {
-    justify-content: space-between;
-}
-
-.clear {
-    flex-basis: 190px;
-}
 
 
 
@@ -95,8 +89,9 @@ button:active {
 
 }
 
-[disabled] {
-    color: black;
+.display-box[disabled] {
+    color: rgba(0,0,0,1);
+    
 }
 *::selection {
 background:rgb(255, 255, 255);
