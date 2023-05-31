@@ -4,7 +4,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Lucida Sans Typewriter';
+    font-family: 'Lucida Sans Typewriter', 'Roboto', sans-serif;
 
 }
 
@@ -33,13 +33,14 @@ body {
 .calculator > * > * {
     flex: 1;
     min-width: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.grow-2 {
-    flex-grow: 2.5;
+.clear {
+    flex-basis: 135px;
 }
-
-
 
 
 
@@ -139,11 +140,11 @@ a[href]:active {
 }
 
 .recolor {
-    background-color:rgb(255, 255, 255);
+    background-color:rgb(255, 0, 0);
     
 }
 .recolor:hover {
-    background-color:rgb(210, 197, 240);
+    background-color:rgb(218, 0, 0);
 
 }
 .recolor:active {
