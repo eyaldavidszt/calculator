@@ -8,6 +8,8 @@ body {
 
 }
 
+/* set up calculator's inner layout with flex */
+
 .calculator {
     min-width: 320px;
     height: 500px;
@@ -70,6 +72,7 @@ a {
     text-decoration: none;
     color: black;
 }
+
 a[href]:active {
     color: red;
 }
@@ -78,13 +81,19 @@ a[href]:active {
     background-color:rgb(255, 0, 0);
     
 }
+
 .recolor:hover {
     background-color:rgb(218, 0, 0);
 
 }
+
 .recolor:active {
     background-color: black;
     color: white;
+}
+
+.sign {
+    font-size: smaller;
 }
 
 
