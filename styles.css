@@ -10,7 +10,6 @@ body {
 
 .calculator {
     min-width: 320px;
-    min-height: 500px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
