@@ -10,11 +10,11 @@ body {
 
 .calculator {
     min-width: 320px;
+    height: 500px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    gap: 20px;
+    justify-content: space-evenly;
     padding: 24px;
 
 
@@ -27,11 +27,11 @@ body {
 .calculator > * {
     display: flex;
     justify-content: space-around;
-    gap: 20px;
+    gap: 10px;
 }
 
 .calculator > * > * {
-    flex-basis: 80px;
+    flex-basis: 90px;
     height: 40px;
     display: flex;
     justify-content: center;
